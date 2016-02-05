@@ -1,6 +1,8 @@
 (require 'ox)
 
 (defun link/org-export-suppress-content (backend)
+  "Filter to remove headline (or content) with `noexport', `nocontent'
+and `noheading' tag"
   (outline-show-all)
   (org-map-entries
    #'(lambda ()
