@@ -1,7 +1,9 @@
+#+LATEX_HEADER: \usepackage[a4paper]{geometry}
+
 * What?
   Filter to remove headline (or content) with specific tags
 
-  #+BEGIN_SRC emacs-lisp :tangle ox-latex-supress-content.el
+  #+BEGIN_SRC emacs-lisp :tangle ox-latex-suppress-content.el
     (require 'ox)
 
     (defun link/org-export-suppress-content (backend)
@@ -40,7 +42,7 @@
 
     (add-hook 'org-export-before-processing-hook #'link/org-export-suppress-content)
 
-    (provide 'ox-latex-supress-content)
+    (provide 'ox-latex-suppress-content)
   #+END_SRC
 
 * License

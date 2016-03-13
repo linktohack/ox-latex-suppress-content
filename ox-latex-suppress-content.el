@@ -36,4 +36,4 @@ and `noheading' tag"
 
 (add-hook 'org-export-before-processing-hook #'link/org-export-suppress-content)
 
-(provide 'ox-latex-supress-content)
+(provide 'ox-latex-suppress-content)
